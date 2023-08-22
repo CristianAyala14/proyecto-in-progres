@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  height: auto;
+  background-color: gray;
+  color: rgb(170, 166, 159);
+  padding: 2.5rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 5rem;
+}
+header .abrir-h {
+  color: rgb(109, 103, 103);
+  font-size: 2rem;
+  padding-inline: 10px;
+  padding-block: 8px;
+  border-radius: 1rem;
+  display: none;
+}
+header .abrir-h:hover {
+  color: rgb(182, 41, 41);
+  cursor: pointer;
+}
+header .nav {
+  gap: 1rem;
+}
+header .nav .cerrar-h {
+  color: rgb(109, 103, 103);
+  font-size: 2rem;
+  padding-inline: 10px;
+  padding-block: 5px;
+  border-radius: 1rem;
+  display: none;
+}
+header .nav .cerrar-h:hover {
+  color: rgb(182, 41, 41);
+  cursor: pointer;
+}
+header .nav ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+header .nav ul li {
+  margin-left: 1rem;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+header .nav ul li:hover {
+  color: rgb(182, 41, 41);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+  header .abrir-h {
+    display: block;
+  }
+  header .nav {
+    display: flex;
+    padding-top: 4rem;
+    padding-right: 1rem;
+    padding-left: 3rem;
+    background-color: black;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    gap: 1rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+  header .nav .cerrar-h {
+    display: block;
+  }
+  header .nav ul {
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  header .nav ul li {
+    margin-block: 1rem;
+  }
+  header .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.main-1 {
+  background-color: rgba(230, 33, 33, 0.452);
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10rem;
+  flex-wrap: wrap;
+}
+.main-1 #exampleModal .modalbody {
+  background-color: purple;
+  height: 20rem;
+  overflow-y: scroll;
+}
+.main-1 #exampleModal .modalbody article {
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+  border: 1px solid black;
+  margin-block: 1rem;
+}
+.main-1 .articulo {
+  height: auto;
+  width: 30rem;
+  padding: 1rem;
+  background-color: rgb(118, 122, 119);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-1 .articulo p {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: azure;
+}
+.main-1 .articulo .img {
+  width: 70%;
+  height: 70%;
+  background-color: azure;
+  border-radius: 2rem;
+}
+.main-1 .articulo .img img {
+  width: 100%;
+  height: 100%;
+}
+.main-1 .articulo button {
+  font-size: 3rem;
+  font-weight: bolder;
+  border-radius: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
